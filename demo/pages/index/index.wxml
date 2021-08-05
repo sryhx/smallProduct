@@ -1,0 +1,21 @@
+<view class="home-main">
+  <view class="banner-top">
+    <swiper indicator-dots="{{dots}}" autoplay="{{autoplay}}" interval="{{interval}}" indicator-active-color='#1AA034'>
+      <swiper-item wx:for="{{banner_list}}">
+        <image src="{{item.store_img}}" mode="fix"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="footer">
+    <navigator class="footer_list" url="/pages/index/index">
+      <view class="home">
+        <text>首页</text>
+      </view>
+    </navigator>
+    <navigator class="footer_list" url="/pages/mine/mine">
+      <view class="mine">
+        <text>我的</text>
+      </view>
+    </navigator>
+  </view>
+</view>

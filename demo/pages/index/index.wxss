@@ -1,0 +1,22 @@
+.banner-top image{
+  width: 100%;
+  height: 15rem;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  border-top: .1rem solid #e0e0e0;
+  width: 100%;
+  height: 3rem;
+  align-items: center;
+}
+.footer .footer_list{
+  width: 50%;
+  text-align: center;
+  font-size: .8rem;
+}
+.footer_list .home text{
+  color: #DD5044;
+}
