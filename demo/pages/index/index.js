@@ -10,6 +10,7 @@ Page({
     banner_list:[]
   },
   onLoad() {
+    
     var that=this;
     (0, _api.IndexData)().then(function (t) {
       console.log(t)
@@ -32,5 +33,20 @@ Page({
         
       })
     });
+
+
+    wx.request({
+      url: 'https://xxx.com/applet/store/getdetail',
+      data: {
+        x: ''
+      },
+      method:"POST",
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function(res) {
+        console.log(res.data)
+      }
+    })
   },
 })
